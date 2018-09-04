@@ -34,7 +34,7 @@ std::vector<std::string>SplitComma(const std::string &line) {
 Port ParsePort(const std::string &line) {
     std::vector<std::string> parts = SplitComma(line);
     if (parts.size() != 4) {
-        std::cerr << "malformed line, skipping: " << line << std::endl;
+        std::cerr << "# malformed line, skipping: " << line << std::endl;
         return Port{};
     }
 
